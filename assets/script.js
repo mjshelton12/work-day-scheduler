@@ -41,7 +41,7 @@ $("#17-text").text(fiveSaved)
 
 // Colors the calendar
 
-for (let i = 8; i <= 24; i++){
+for (let i = 8; i <= 17; i++){
     var timeBlock = $(`#${i}`)
     var timeBlockNum = parseInt($(`#${i}`).attr('id'))
     var inputEl = timeBlock.siblings('div').children('textarea')
