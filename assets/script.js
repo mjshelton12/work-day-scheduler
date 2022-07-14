@@ -7,12 +7,11 @@ var saveBtn = $('.saveBtn')
 var currentDate = moment().format('MMMM Do YYYY');
 var currentHour = moment().format('HH');
 
-console.log(currentHour)
-
 
 // Puts date at the top
 
 date.text(currentDate);
+
 
 //Brings forth saved text
 
@@ -175,15 +174,12 @@ function saveFive(){
 
 $(document).ready(function(){
     $("#deleteBtn").on("click", function(){
-        console.log("Honor Brighticus")
         clearAll()
     })
 })
 
 function clearAll(){
-    console.log("butter butter peanut butter")
-    $("textarea").empty()
     localStorage.clear()
-
+    location.reload()
 }
 
